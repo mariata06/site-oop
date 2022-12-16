@@ -5,14 +5,6 @@ export default class VideoPlayer {
         this.close = this.overlay.querySelector('.close');
     }
 
-    // play() {
-    //     this.btns.forEach(btn => {
-    //         btn.addEventListener('click', () => {
-    //             console.log('Hello');
-    //         });
-    //     });
-    // }
-
     bindTriggers() {
         this.btns.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -41,11 +33,6 @@ export default class VideoPlayer {
             width: '100%',
             // videoId: 'M7lc1UVf-VE',
             videoId: `${url}`
-            // события пока не нужны
-            // events: {
-            //   'onReady': onPlayerReady,
-            //   'onStateChange': onPlayerStateChange
-            // }
         });
 
         console.log(this.player);
